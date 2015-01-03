@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>409</string>
+	<key>AMApplicationVersion</key>
+	<string>2.5</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>appPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Open Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Open Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>appPath</key>
+					<string>/Applications/Sublime Text 2.app</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.OpenFinderItems</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMOpenFinderItems</string>
+				<key>InputUUID</key>
+				<string>9A5C8C2B-6FAB-435E-80CA-FF5B58EEED68</string>
+				<key>Keywords</key>
+				<array>
+					<string>Open</string>
+					<string>Document</string>
+					<string>File</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>60CF80F0-B213-48AE-AD28-089DF15E56C7</string>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>7103E376-C350-48C4-877B-3839E2284EB7</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>appPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>449.000000:112.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Open Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run args	-- Initialize target folder	tell application "Finder" to set target_folder to URL of item 1 of item 1 of args		set target_folder_chars to characters 8 thru -1 of target_folder	set target_folder to ""		repeat with c in target_folder_chars		set target_folder to target_folder &amp; c	end repeat		target_folderend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>72B06C96-4E35-4A3F-B7C2-6E036E100A4C</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>F2974CE1-CA6D-42BB-9A92-CC0A5B5D20B3</string>
+				<key>UUID</key>
+				<string>A1DADF9A-E65E-4177-9DBA-F42DB59CCA65</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>449.000000:154.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>global target_folderglobal tab_namesglobal NAME_MAINglobal NAME_SBT_CONTROLglobal NAME_SCALA_COMPILEglobal NAME_COFFEE_MAINglobal NAME_COFFEE_TESTglobal NAME_KARMAon run args	-- Initialize target folder	set target_folder to item 1 of args		-- Initialize tab names	set tab_names to {}	set tab_names to tab_names &amp; {"Main"}	set tab_names to tab_names &amp; {"Sbt Control"}	set tab_names to tab_names &amp; {"Scala Compile"}	set tab_names to tab_names &amp; {"Coffee Main"}	set tab_names to tab_names &amp; {"Coffee Test"}	set tab_names to tab_names &amp; {"Karma"}		-- Initialize tab names keys		set NAME_MAIN to 1	set NAME_SBT_CONTROL to 2	set NAME_SCALA_COMPILE to 3	set NAME_COFFEE_MAIN to 4	set NAME_COFFEE_TEST to 5	set NAME_KARMA to 6		-- Operate the terminal	tell application "iTerm"		tell the current terminal						repeat with i from 1 to count of tab_names				set tab_name to item i of tab_names				set cmds to my commands_to_execute(i)								set name of current session to tab_name								repeat with cmd in cmds					tell current session to write text cmd				end repeat								if i &lt; (count of tab_names) then					launch session ""				end if			end repeat					end tell	end tellend runon commands_to_execute(idx)	-- Commons	set res to {}	set res to res &amp; {"cd " &amp; target_folder}		-- Custom for each name	if idx is NAME_MAIN then			else if idx is NAME_SBT_CONTROL then		set res to res &amp; {"sbt"}		set res to res &amp; {"container:start"}		set res to res &amp; {"test"}			else if idx is NAME_SCALA_COMPILE then		set res to res &amp; {"sbt"}		set res to res &amp; {"~;copy-resources;aux-compile"}			else if idx is NAME_COFFEE_MAIN then		set coffee_out_main to "src/main/webapp/assets/js/compiled"		set coffee_in_main to "src/main/coffee"		set res to res &amp; {coffee_compile(coffee_in_main, coffee_out_main)}			else if idx is NAME_COFFEE_TEST then		set coffee_in_test to "src/test/coffee"		set coffee_out_test to "src/test/js"		set res to res &amp; {coffee_compile(coffee_in_test, coffee_out_test)}			else if idx is NAME_KARMA then		set res to res &amp; {"karma start karma.conf.coffee"}			end if		resend commands_to_executeon coffee_compile(in_folder, out_folder)	"coffee -wo " &amp; out_folder &amp; " -c " &amp; in_folderend coffee_compile</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>A0ECE037-37B8-433D-9106-C37069BB1942</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>545367CB-E091-4AB3-8CE4-7766D461D438</string>
+				<key>UUID</key>
+				<string>484FE4D0-2D6A-44C6-B56C-B92EF1935C45</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<false/>
+				<key>location</key>
+				<string>449.000000:196.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<false/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>0FF2EFF0-F896-4687-9A47-4D3FCE1C5AC7</key>
+		<dict>
+			<key>from</key>
+			<string>7103E376-C350-48C4-877B-3839E2284EB7 - 7103E376-C350-48C4-877B-3839E2284EB7</string>
+			<key>to</key>
+			<string>A1DADF9A-E65E-4177-9DBA-F42DB59CCA65 - A1DADF9A-E65E-4177-9DBA-F42DB59CCA65</string>
+		</dict>
+		<key>9F3AA1F6-D655-4675-B236-413C394579BA</key>
+		<dict>
+			<key>from</key>
+			<string>A1DADF9A-E65E-4177-9DBA-F42DB59CCA65 - A1DADF9A-E65E-4177-9DBA-F42DB59CCA65</string>
+			<key>to</key>
+			<string>484FE4D0-2D6A-44C6-B56C-B92EF1935C45 - 484FE4D0-2D6A-44C6-B56C-B92EF1935C45</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>serviceApplicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.folder</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
